@@ -6,6 +6,8 @@ description 'Installs/Configures acme_os_hardening'
 long_description 'Installs/Configures acme_os_hardening'
 version '0.1.0'
 chef_version '>= 14.0'
+depends 'os-hardening'
+depends 'windows-hardening'
 
 %w(centos).each do |os|
   supports os

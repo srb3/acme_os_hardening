@@ -14,3 +14,5 @@ run_list 'acme_os_hardening::default'
 
 # Specify a custom source for a single cookbook:
 cookbook 'acme_os_hardening', path: '.'
+cookbook 'windows-hardening', github: 'dev-sec/chef-windows-hardening' tag: 'v0.9.1'
+cookbook 'os-hardening', github: 'dev-sec/chef-os-hardening' tag: 'v4.0.0'
