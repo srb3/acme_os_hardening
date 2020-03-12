@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 if platform?('windows')
-  include_recipe 'windows-hardening::default'
+  include_recipe node['acme_os_hardening']['windows_hardening_cookbook']
 else
-  include_recipe 'os-hardening::default'
+  include_recipe node['acme_os_hardening']['linux_hardening_cookbook']
 end
